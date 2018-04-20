@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>weapp.socket.io</title>
+    <meta name="description" content="Write your awesome realtime Wechat mini program">
+    <link rel="icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/logo.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/3.styles.8c6ad8ec.css" as="style"><link rel="preload" href="/assets/js/app.8d62ecf8.js" as="script"><link rel="preload" href="/assets/js/2.56adbf7b.js" as="script"><link rel="prefetch" href="/assets/js/0.e92912bb.js"><link rel="prefetch" href="/assets/js/1.ee1ccf7d.js">
+    <link rel="stylesheet" href="/assets/css/3.styles.8c6ad8ec.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-exact-active router-link-active"><!----><span class="site-name">
+      weapp.socket.io
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link router-link-exact-active router-link-active">Home</a></div><div class="nav-item"><a href="/demo/" class="nav-link">Demo</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><a href="https://github.com/weapp-socketio/weapp.socket.io" target="_blank" rel="noopener noreferrer" class="github-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link router-link-exact-active router-link-active">Home</a></div><div class="nav-item"><a href="/demo/" class="nav-link">Demo</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><a href="https://github.com/weapp-socketio/weapp.socket.io" target="_blank" rel="noopener noreferrer" class="github-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><!----></div><div class="home"><div class="hero"><img src="/hero.png" alt="hero"><h1>weapp.socket.io</h1><p class="description">
+      Write your awesome realtime Wechat mini program
+    </p><p class="action"><a href="/guide/" class="nav-link action-button">Get Started →</a></p></div><div class="features"><div class="feature"><h2>Socket.io Style</h2><p>Full feature &amp; style of socket.io, do not change your habits</p></div><div class="feature"><h2>Polling &amp; Websocket</h2><p>Create polling connection default, auto switch to websocket mode if support</p></div><div class="feature"><h2>Binary Support</h2><p>it's possible to send any blob back and forth: image, audio, video.</p></div></div><div class="content custom"><h3 id="style-same-to-on-browser"><a href="#style-same-to-on-browser" aria-hidden="true" class="header-anchor">#</a> Style same to on browser</h3><pre class="language-text"><code>const io = require('./yout_path/weapp.socket.io.js')
+
+const socket = io('http://localhost:8000')
+
+socket.on('news', d =&gt; {
+  console.log('received news: ', d)
+})
+
+socket.emit('news', {
+  title: 'this is a news'
+})
+</code></pre></div><div class="footer">
+    MIT Licensed | Copyright © 2018-present wilson | website based on vuepress by Evan You
+  </div></div></div></div>
+    <script src="/assets/js/2.56adbf7b.js" defer></script><script src="/assets/js/app.8d62ecf8.js" defer></script>
+  </body>
+</html>
